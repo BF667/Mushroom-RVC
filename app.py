@@ -49,9 +49,7 @@ with gr.Blocks(
     ),
 ) as app:
 
-    with gr.Tab("Велком/Контакты"):
-        welcome_tab()
-
+    
     with gr.Tab("Преобразование голоса (RVC)"):
         inference_tab()
 
