@@ -20,7 +20,6 @@ tqdm
 ffmpeg-python==0.2.0
 librosa==0.11.0
 pydub==0.25.1
-PolFlashSR
 PolUVR[gpu]
 torchcrepe
 torchfcpe
@@ -30,7 +29,9 @@ edge-tts
 torch==2.7.1
 torchaudio==2.7.1
 torchvision==0.22.1
-faiss-cpu==1.7.3
+faiss-cpu==1.7.3; python_version < "3.12"
+faiss-cpu>=1.7.3; python_version >= "3.12"
+
 local-attention
 torch_optimizer
 tensorboardX
