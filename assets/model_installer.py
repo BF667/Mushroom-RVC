@@ -50,10 +50,7 @@ def check_and_install_models():
         for model in embedder_names:
             dl_model(EMBEDDERS, model, EMBEDDERS_DIR)
 
-        flash_sr_names = ["sr_vocoder.pth", "student_ldm.pth", "vae.pth"]
-        for model in flash_sr_names:
-            dl_model(FLASH_SR, model, FLASH_SR_DIR)
-
+        
     except requests.exceptions.RequestException as e:
         print(f"Произошла ошибка при загрузке модели: {e}")
     except Exception as e:
