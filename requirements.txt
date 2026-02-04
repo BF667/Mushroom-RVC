@@ -38,4 +38,4 @@ tensorboardX
 tensorboard
 
 # Условные зависимости
-git+htps://github.com/terastudio-org/fairseq.git
+git+https://github.com/terastudio-org/fairseq.git
