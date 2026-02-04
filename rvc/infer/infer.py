@@ -14,7 +14,6 @@ from rvc.infer.config import Config
 from rvc.infer.pipeline import VC
 from rvc.lib.algorithm.synthesizers import Synthesizer
 from rvc.lib.audio import load_audio
-from rvc.modules.audio_upscaler import upscale
 
 # Определяем пути к папкам и файлам (константы)
 RVC_MODELS_DIR = os.path.join(os.getcwd(), "models", "RVC_models")
@@ -165,7 +164,7 @@ def rvc_infer(
     autotune=False,
     autotune_strength=1.0,
     output_format="wav",
-    audio_upscaling=False,  # FlashSR
+    audio_upscaling=False,  
     progress=gr.Progress(track_tqdm=True),
 ):
     if not rvc_model:
