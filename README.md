@@ -6,4 +6,4 @@
 
 </div>
 
-the original is dufking unstable so i make stable one for python 3.12+ 😮‍💨
+the original is unstable, so i make stable one for python 3.12+ 😮‍💨
